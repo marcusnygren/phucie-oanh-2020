@@ -77,10 +77,12 @@ export default (_req: NowRequest, res: NowResponse) => {
   let dateNumber = Math.floor(Math.random() * dateIdeas.length);
   const dateIdea = dateIdeas[dateNumber];
 
-  let object = {
+  /*let object = {
       idea: dateIdea,
       number: dateNumber
-  }
+  }*/
 
-  res.status(200).send(object);
+  //res.status(200).send(object);
+
+  res.status(200).send(dateIdea);
 };

@@ -20,7 +20,7 @@ function Index() {
       </Helmet>
       <h1>Phucie and Oanh 2020</h1>
       <h2>
-        Date idea #{dateIdea ? dateIdea.number + 1 : '0'}: {dateIdea ? dateIdea.idea : 'Loading date idea...'}
+        Date idea: {dateIdea ? dateIdea : 'Loading date idea...'}
       </h2>
       <p>
         {/*Beskrivning*/}
