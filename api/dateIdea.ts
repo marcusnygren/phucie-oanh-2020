@@ -74,7 +74,13 @@ export default (_req: NowRequest, res: NowResponse) => {
   "Watch the Sunset Together",
   "Write out a bucket list"];
 
-  const dateIdea = dateIdeas[Math.floor(Math.random() * dateIdeas.length)];
+  let dateNumber = Math.floor(Math.random() * dateIdeas.length);
+  const dateIdea = dateIdeas[dateNumber];
 
-  res.status(200).send(dateIdea);
+  let object = {
+      idea: dateIdea,
+      number: dateNumber
+  }
+
+  res.status(200).send(object);
 };

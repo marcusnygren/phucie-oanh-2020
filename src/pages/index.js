@@ -20,14 +20,12 @@ function Index() {
       </Helmet>
       <h1>Phucie and Oanh 2020</h1>
       <h2>
-        Date idea #26: Attend an Outdoor Concert
+        Date idea #{dateIdea ? dateIdea.number + 1 : '0'}: {dateIdea ? dateIdea.idea : 'Loading date idea...'}
       </h2>
       <p>
-      This one's a definite time commitment, so you might want to get to know each other over a drink or meal before going for this option. But the perks of an outdoor show, especially if you both love the band, are the good vibes. If there's space on
+        {/*Beskrivning*/}
       </p>
       <br />
-      <h2>The date is:</h2>
-      <p>{dateIdea ? dateIdea : 'Loading date idea...'}</p>
     </main>
   );
 }
