@@ -1,8 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from "gatsby"
 import '../styles/index.css';
 
+import Img from "gatsby-image";
+
 function Index() {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      file(relativePath: { eq: "leafs.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+    }
+  `)
+  
   const [dateIdea, setDateIdea] = useState(null);
   useEffect(() => {
     async function getDateIdea() {
@@ -19,12 +35,13 @@ function Index() {
         <title>Phucie and Oanh 2020</title>
       </Helmet>
       <h1>Phucie and Oanh 2020</h1>
+      <Img
+        fluid={data.file.childImageSharp.fluid}
+        alt="Leafs"
+      />
       <h2>
         Date idea: {dateIdea ? dateIdea : 'Loading date idea...'}
       </h2>
-      <p>
-        {/*Beskrivning*/}
-      </p>
       <br />
     </main>
   );

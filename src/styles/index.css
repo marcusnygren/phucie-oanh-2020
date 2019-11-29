@@ -2,7 +2,7 @@ main {
   align-content: center;
   box-sizing: border-box;
   display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+  font-family: 'Roboto Mono', 'Times New Roman', 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
     'Arial', sans-serif;
   hyphens: auto;
   line-height: 1.65;
@@ -33,7 +33,7 @@ a:hover {
 }
 code,
 pre {
-  color: #d400ff;
+  color: #E7B2A5;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: 0.92em;
