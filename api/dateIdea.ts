@@ -75,7 +75,7 @@ export default (_req: NowRequest, res: NowResponse) => {
   "Write out a bucket list"];
 
   let dateNumber = Math.floor(Math.random() * dateIdeas.length);
-  const dateIdea = dateIdeas[dateNumber];
+  let dateIdea = dateNumber + ": " + dateIdeas[dateNumber];
 
   /*let object = {
       idea: dateIdea,

@@ -31,7 +31,8 @@ module.exports = {
             family: `Clicker Script`
           },
           {
-            family: `Roboto`
+            family: `Roboto`,
+            variants: [`300`, `400`]
           }
         ],
       },
