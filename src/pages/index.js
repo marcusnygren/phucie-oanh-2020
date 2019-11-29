@@ -32,9 +32,9 @@ function Index() {
   return (
     <main>
       <Helmet>
-        <title>Phucie and Oanh 2020</title>
+        <title>Phuc and Oanh 2020</title>
       </Helmet>
-      <h1>Phucie and Oanh 2020</h1>
+      <h1>Phuc and Oanh 2020</h1>
       <Img
         fluid={data.file.childImageSharp.fluid}
         alt="Leafs"

@@ -2,7 +2,7 @@ main {
   align-content: center;
   box-sizing: border-box;
   display: grid;
-  font-family: 'Clicker Script', 'Times New Roman', 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+  font-family: 'SF Pro Text', 'Roboto', 'Times New Roman', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
     'Arial', sans-serif;
   hyphens: auto;
   line-height: 1.65;
@@ -16,6 +16,7 @@ main {
 
 h1 {
   font-size: 45px;
+  font-family: 'Clicker Script';
 }
 h2 {
   margin-top: 1.5em;

@@ -27,6 +27,12 @@ module.exports = {
           {
             family: `Calligraffitti`
           },
+          {
+            family: `Clicker Script`
+          },
+          {
+            family: `Roboto`
+          }
         ],
       },
     }
