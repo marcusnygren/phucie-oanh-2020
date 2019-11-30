@@ -34,7 +34,7 @@ function Index() {
       <Helmet>
         <title>Phuc and Oanh</title>
       </Helmet>
-      <h1>Phuc and Oanh</h1>
+      <h1>for Phuc and Oanh</h1>
       <Img
         fluid={data.file.childImageSharp.fluid}
         alt="Leafs"
@@ -43,6 +43,7 @@ function Index() {
         Date idea #{dateIdea ? dateIdea : '#0: Loading date idea...'}
       </h2>
       <br />
+      <pre>from Marcus and Linnea</pre>
     </main>
   );
 }
