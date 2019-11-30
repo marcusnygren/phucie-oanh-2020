@@ -34,15 +34,17 @@ function Index() {
       <Helmet>
         <title>Phuc and Oanh</title>
       </Helmet>
-      <h1>Phuc and Oanh</h1>
+      <h1>for Phuc and Oanh</h1>
       <Img
         fluid={data.file.childImageSharp.fluid}
         alt="Leafs"
       />
       <h2>
-        Date idea #{dateIdea ? dateIdea : '#0: Loading date idea...'}
+        Date idea #{dateIdea ? dateIdea : '#0: Creating memories...'}
       </h2>
+      <p>Refresh the site for a new idea</p>
       <br />
+      <pre>from Marcus and Linnea</pre>
     </main>
   );
 }

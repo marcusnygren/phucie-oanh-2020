@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(231, 178, 165, 0.1);
+}
+
 main {
   align-content: center;
   box-sizing: border-box;
@@ -12,7 +16,6 @@ main {
   min-height: 100vh;
   padding: 72px 0;
   text-align: center;
-  background-color: rgba(231, 178, 165, 0.1);
 }
 
 h1 {
